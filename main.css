@@ -474,7 +474,7 @@ li {
     }
 
     .about-heading h1 {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
     .section-heading h1 {
@@ -544,13 +544,21 @@ li {
         order: 2;
     }
 
+    .timeline ul {
+        padding: 3rem;
+    }
+
     .timeline p {
         font-size: 1.6rem;
     }
 
     .timeline .date::before {
-        left: -19rem;
-        font-size: 1.1rem;
+        left: -16.55rem;
+        font-size: 1rem;
+    }
+
+    .timeline .date::after {
+        left: -4rem;
     }
 
     .up {
