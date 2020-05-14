@@ -1,4 +1,9 @@
 /*Start global*/
+:root {
+	--main-text-color: #eee;
+	--main-background-color: #111111;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
 html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
-    color: #eee;
+    color: var(--main-text-color);
     overflow: hidden;
 }
 
@@ -31,7 +36,7 @@ section {
 
 a {
     text-decoration: none;
-    color: #eee;
+    color: var(--main-text-color);
 }
 
 p {
@@ -113,7 +118,7 @@ header {
     position: fixed;
     top: -150vh;
     z-index: 50;
-    background-color: #111111;
+    background-color: var(--main-background-color);
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1,0,0,1);
@@ -167,7 +172,7 @@ li {
 }
 
 .bar {
-    background: #eee;
+    background: var(--main-text-color);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -291,15 +296,15 @@ li {
 .icon-container {
     width: 10rem;
     height: 10rem;
-    border: 3px solid #eee;
-    background-color: #111111;
+    border: 3px solid var(--main-text-color);
+    background-color: var(--main-background-color);
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 
 .icon-container i {
-    color: #eee;
+    color: var(--main-text-color);
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -343,7 +348,7 @@ li {
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: #eee;
+    color: var(--main-text-color);
     transition: color 650ms;
 }
 
@@ -355,7 +360,7 @@ li {
 
 /*Start timeline*/
 .timeline ul {
-    border-left: 4px solid #eee;
+    border-left: 4px solid var(--main-text-color);
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;
     position: relative;
@@ -404,12 +409,12 @@ li {
 
 .timeline .date::after {
     content: '';
-    box-shadow: 0 0 0 4px #eee;
+    box-shadow: 0 0 0 4px var(--main-text-color);
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: #111111;
+    background-color: var(--main-background-color);
 }
 
 /*End timeline*/
@@ -418,7 +423,7 @@ li {
 .copyright {
     width: 100%;
     text-align: center;
-    background-color: #111111;
+    background-color: var(--main-background-color);
     padding: 2rem 0;
     position: relative;
 }
@@ -427,7 +432,7 @@ li {
     position: absolute;
     width: 5rem;
     height: 5rem;
-    background-color: #eee;
+    background-color: var(--main-text-color);
     top: -2.5rem;
     right: 5rem;
     border-radius: 100%;
@@ -437,7 +442,7 @@ li {
 }
 
 .up i {
-    color: #111111;
+    color: var(--main-background-color);
     font-size: 2rem;
     margin: auto;
 }
