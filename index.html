@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="#" />
-    <script type="text/javascript">
-        function showNowYear() {
-           var now = new Date();
-           var year = now.getFullYear();
-           document.write(year);
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -274,7 +267,7 @@
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
         </div>
-        <p>&copy; <script type="text/javascript">showNowYear();</script> Nobuhiro Harada</p>
+        <p>&copy; <script type="text/javascript">document.write((new Date()).getFullYear());</script> Nobuhiro Harada</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>
